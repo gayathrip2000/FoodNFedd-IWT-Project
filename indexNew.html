@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home - foodnfeed.com</title>
+<link rel = "icon" href ="Images/FoodnFeed Logo.png" type = "image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="styles/Homepagestyles.css">
+<link rel="stylesheet" type="text/css" href="styles/footerStyles.css">
+<link rel="stylesheet" type="text/css" href="new.css">
+<link rel="stylesheet" type="text/css" href="styles/stylemenu.css">
+
+<link rel="stylesheet" type="text/css" href="styles/FeedbackHover.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+.search input[type=text]{
+    width:300px;
+    height:45px;
+    border-radius:25px;
+    border: none;
+
+}
+  
+.search{
+    float:right;
+    margin:1px;
+
+}
+  
+.search button{
+    background-color: green;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 
+body{
+    background-color: #f2f2f2;
+}
+   /*homepage content css*/
+.home {
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+section {
+  padding: 10px 3%;
+}
+.home .image img {
+  width: 100%;
+  height:100%;
+}
+.home .content h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.home .content p {
+  color: var(--grey);
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+/*order now btn*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 2px solid rgb(103, 150, 121);
+  border-radius: 5px;
+  background: #8ea497;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #eafaf1;
+  outline: none;
+}
+.top{
+    background-color: rgb(224, 227, 218);
+}
+
+.dropbtn {
+    background-color: white;
+    color: #479e7a;
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color :white;
+    min-width: 160px;
+    box-shadow: 0px 6px 17px 0px white;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #479e7a;
+    padding: 12px 50px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+  
+      background-color:#f1f1f1;
+  
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: whitesmoke;
+  }
+
+</style>
+<body>
+ 
+    <!-- Navbar Section starts Here -->
+
+    <div class="navbar">
+
+        <a class="active" href="indexNew.html">Home</a>
+        <a href="Menu.html">Menu</a>
+         <a href="AboutUs.html">About Us</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <div class="use">
+                <div class="action">
+                        <div class="profile" onclick="menu();">
+                            <a href="#"></a><img src="Images/user.png" id = "use" width="25px" height="25px"></a>
+                        </div>
+                        <div class="menu">
+                            
+                            <ul>
+                 
+                <div class="dropdown">                
+                <li><img src="Images/login.png"><a href="login.php">  <button class="dropbtn">Login as</button></a></li>
+
+                <div class="dropdown-content">
+                    <a href="UserLoginPage.php"><center>User</center></a><br><br>
+                    <a href="AdminLogin.php"><center>Admin</center></a>
+                    </div>
+                </div>
+
+
+                 <li><img src="Images/register.png"><a href="php/index.php">Sign Up</a></li>
+              </ul>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function menu()
+                    {
+                        const toggle = document.querySelector('.menu');
+                        toggle.classList.toggle('active');
+                    }
+                </script>
+      </div>
+
+ <!-- Navbar Section Ends Here -->
+
+
+
+<!-- fOOD sEARCH Section Starts Here -->
+    <section class="food-search text-center">
+        <div class="container">
+            
+            <form action="food-search.html" method="POST">
+                <input type="search" name="search" placeholder="Search for Food.." required>
+                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+            </form>
+
+        </div>
+    </section>
+    <!-- fOOD sEARCH Section Ends Here -->
+    
+
+        
+        <!-- logo with tag -->
+          
+        <center><img src="Images/FoodnFeed Logo1.png" alt ="image" width="200px" height="100px" class="center">
+               <h1 style="color:#0d6f4b; padding-top:10px;">Food n Feed</h1>
+                  
+                <b>A Online Food Delivery Portal for You....</b></center>
+         
+
+<!--image gallery-->
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/kokis.jpg" style="width:100%">
+      <div class="text">Healthy</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images/SL2.jpg" style="width:100%">
+      <div class="text">Favourite</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Images/RICE.jpg" style="width:100%">
+      <div class="text">Delicious</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  
+
+ <!-- CAtegories Section Starts Here -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center">Connect with Us</h2>
+
+            <a href="Restaurant_Register.php">
+            <div class="box-3 float-container">
+                <img src="Images/HomeRR.jpg" alt="Pizza" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Add Your Restaurant</h3><h4> Expand Your Business with Us</h4>
+            </div>
+            </a>
+
+            <a href="DelRider_Register.php" target="_blank">
+            <div class="box-3 float-container">
+                <img src="Images/DELIVERY (2).jpg" alt="Burger" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Drive With FnF</h3> <H4>Be a Partner of Our Delivery Rides</H4>
+            </div>
+            </a>
+
+              <a href="php/index.php" >
+            <div class="box-3 float-container">
+                <img src="Images/HomeCR.jpg" alt="Momo" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Be a Member </h3> <h4>Experience Exciting Benefits</h4>
+            </div>
+            </a>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Categories Section Ends Here -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+<!-- fOOD MEnu Section Starts Here -->
+    <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Suggestions For You</h2>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="menu images/360 Madiha 7.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Mixed Fried Rice</h4>
+                    <p class="food-price">Rs.1250.00</p>
+                    <p class="food-detail">
+                        Made with Italian Sauce, Chicken, and organice vegetables.
+                    </p>
+                    <br>
+
+                    <a href="shoppingcartFnF.php" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="menu images/360 Madiha 7.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Chicken Nasi Rice</h4>
+                    <p class="food-price">Rs.1350.00</p>
+                    <p class="food-detail">
+                        Made with sausages, Chicken, and organice vegetables.
+                    </p>
+                    <br>
+
+                    <a href="shoppingcartFnF.php" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="menu images/Biryani.jpg" alt="Chicke Hawain Burger" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Biriyani</h4>
+                    <p class="food-price">Rs.950.00</p>
+                    <p class="food-detail">
+                        Made with prawns, Chicken, and organice vegetables.
+                    </p>
+                    <br>
+
+                    <a href="shoppingcartFnF.php" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Chicken & Pork Pizza -Large</h4>
+                    <p class="food-price">Rs.2000.00</p>
+                    <p class="food-detail">
+                        Made with Italian Sauce, Chicken, and organice vegetables.
+                    </p>
+                    <br>
+
+                    <a href="shoppingcartFnF.php" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Deviled chicken Pizza</h4>
+                    <p class="food-price">Rs.700.00</p>
+                    <p class="food-detail">
+                        Made with Italian Sauce, Chicken, and organice vegetables.
+                    </p>
+                    <br>
+
+                    <a href="shoppingcartFnF.php" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="Images/menu-momo.jpg" alt="Chicke Hawain Momo" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Chicken Steam Momo</h4>
+                    <p class="food-price">Rs.1700.00</p>
+                    <p class="food-detail">
+                        Made with Italian Sauce, Chicken, and organice vegetables.
+                    </p>
+                    <br>
+
+                    <a href="shoppingcartFnF.php" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+
+            
+
+        </div>
+
+        <p class="text-center">
+            <a href="restaurant.html" target=”_blank”>Restaurants Near Me</a>
+        </p>
+    </section>
+    <!-- fOOD Menu Section Ends Here -->
+
+
+
+    <div id="mySidenav" class="sidenav">
+ 
+        <a href="feedback.html" id="contact">Feedback</a>
+      </div>       
+
+
+
+
+
+
+<hr>
+<!--RESPONSIVE FOOTER FOR WEB PAGE-->
+<footer class="footer">
+  	 
+  	 	<div class="row">
+  	 		<div class="footer-col">
+				<h4>Popular Categories</h4>
+				<ul>
+					<li><a href="Sri Lankan.html">Sri Lankan</a></li>
+					<li><a href="Indian.html">Indian</a></li>
+					<li><a href="Italian.html">Italian</a></li>
+					<li><a href="Vegetarian.html">Vegetarian</a></li>
+				</ul>
+			</div>
+  	 		<div class="footer-col">
+  	 			<h4>Popular Pages</h4>
+  	 			<ul>
+  	 				<li><a href="indexNew.html">Home</a></li>
+  	 				<li><a href="FAQs.html" target=”_blank”>FAQ</a></li>
+  	 				<li><a href="AboutUs.html" target=”_blank”>About Us</a></li>
+  	 				<li><a href="ContactUs.html" target=”_blank”>Contact Us</a></li>
+  	 				<li><a href="restaurant.html"target=”_blank”>Restaurants Near Me</a></li>
+  	 			</ul>
+  	 		</div>
+			   
+  	 		<div class="footer-col">
+  	 			<h4>Reach Us</h4>
+  	 			<ul>
+  	 				
+  	 				<li><a href="#">info@foodnfeed.lk</a></li>
+  	 				<li><a href="#">+94 771559844</a></li>
+  	 				<li><a href="#">foodnfeed@gmail.com</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+			
+  	 			<h4>Connect With Us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com" target=”_blank”><i class="fa fa-facebook"></i></a>
+  	 				<a href="https://www.twitter.com"target=”_blank”><i class="fa fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com"target=”_blank”><i class="fa fa-instagram"></i></a>
+  	 				<a href="https://www.linkedin.com/"target=”_blank”><i class="fa fa-linkedin"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div> 
+		 
+  	 <br/><br/> <br/>
+	 <center><p style="color:white; font-size:10px">&COPY; 2022 foodnfeed.com. All Rights Reserved.</p></center>
+  </footer>          
+
+</body>
+</html>

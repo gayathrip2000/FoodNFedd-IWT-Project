@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback - foodnfeed.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="Images/FoodnFeed Logo.png" type = "image/x-icon">
+<link rel="stylesheet" href="styles/feedbackStyles.css">
+<link rel="stylesheet" type="text/css" href="styles/Homepagestyles.css">
+<link rel="stylesheet" type="text/css" href="styles/footerStyles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/feedback.js"></script>
+
+</head>
+<style>
+     .search input[type=text]{
+    width:300px;
+    height:45px;
+    border-radius:25px;
+    border: none;
+
+}
+  
+.search{
+    float:right;
+    margin:1px;
+
+}
+  
+.search button{
+    background-color: green;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 
+/*style submit button*/
+input[type=submit] {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  background-color: transparent;
+  color: #032625;
+  padding: 12px 40px;
+  border: none;
+  margin-top: -20px;
+  margin-left: -35px;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  
+}
+
+input[type=submit]:hover {
+  opacity:0.5;
+  cursor: pointer;
+}
+/* Add styles to the form content*/
+.form-content {
+  max-width: 300px;
+  max-height: 610px;
+  padding: 10px;
+  background-color: white;
+}
+</style>
+<body style="background-image: linear-gradient(to right, rgb(5, 77, 71), rgb(161, 216, 210))">
+
+<div class="navbar">
+
+  <a class="active" href="indexNew.html">Home</a>
+  <a href="Menu.html">Menu</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="ContactUs.html">Contact Us</a>
+   
+  <div class="search">
+    <form action="#">
+        <input type="text" placeholder=" Search Menus" name="search">
+        <button>
+        <i class="fa fa-search"style="font-size: 15px;"></i>
+        </button>
+    </form>
+  </div>
+</div>
+
+<!--feedback-->
+
+<div class="containerh">
+    <div class="top">
+      <h1>Please Review Us</h1>
+	  <h2>We Appriciate Your Feedback!</h2>
+    </div>
+    <div class="contenth">
+        <div class="left">
+            <img src="Images/clipart1.png" style="width:100%; border-radius: 50px ">
+        </div>
+        <div class="right">
+            <div class="contentrb">
+                <h1 style="color:#032625">Overall Service Quality</h1>
+                <p style="color:#032625">What is your opinion on FoodnFeed? Please select & submit.</p><br>
+                <form action="radio.php" method="post">
+                  <label class="container">Excellent
+                  <input type="radio" checked="checked" name="quality" value="Excellent">
+                  <span class="checkmark"></span>
+                  </label><br>
+                  <label class="container">Good
+                  <input type="radio" name="quality" value="Good">
+                  <span class="checkmark"></span>
+                  </label><br>
+                  <label class="container">Average
+                  <input type="radio" name="quality" value="Average">
+                  <span class="checkmark"></span>
+                  </label><br>
+                  <label class="container">Dissatisfied
+                  <input type="radio" name="quality" value="Dissatisfied">
+                  <span class="checkmark"></span>
+                  </label><br>
+                  <input type="submit" name="Submit">
+                </form>
+                
+            </div>
+            
+            <div class="contentf">
+                <button class="popup-button" onclick="openForm()">Feedback</button>
+
+                <div class="feedback-popup" id="fbForm">
+                  <form action="feedback.php" method="post" class="form-content">
+                    <h1>Feedback</h1>
+                    
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <label for="message">Message</label>
+                    <textarea placeholder="Your message..." name="message" required></textarea>
+
+                    <button type="submit" name="Send" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--RESPONSIVE FOOTER FOR WEB PAGE-->
+<footer class="footer">
+  	 
+  	 	<div class="row">
+  	 		<div class="footer-col">
+				<h4>Popular Categories</h4>
+				<ul>
+					<li><a href="Sri Lankan.html">Sri Lankan</a></li>
+					<li><a href="Indian.html">Indian</a></li>
+					<li><a href="Italian.html">Italian</a></li>
+					<li><a href="Vegetarian.html">Vegetarian</a></li>
+				</ul>
+			</div>
+  	 		<div class="footer-col">
+  	 			<h4>Popular Pages</h4>
+  	 			<ul>
+  	 				<li><a href="indexNew.html">Home</a></li>
+  	 				<li><a href="FAQs.html">FAQ</a></li>
+  	 				<li><a href="AboutUs.html">About Us</a></li>
+  	 				<li><a href="ContactUs.html">Contact Us</a></li>
+  	 				<li><a href="restaurant.html">Restaurants Near Me</a></li>
+  	 			</ul>
+  	 		</div>
+			   
+  	 		<div class="footer-col">
+  	 			<h4>Reach Us</h4>
+  	 			<ul>
+  	 				
+  	 				<li><a href="#">info@foodnfeed.lk</a></li>
+  	 				<li><a href="#">+94 771559844</a></li>
+  	 				<li><a href="#">foodnfeed@gmail.com</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+			
+  	 			<h4>Connect With Us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+  	 				<a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+  	 				<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div> 
+		 
+  	 <br/><br/> <br/>
+	 <center><p style="color:white; font-size:10px">&COPY; 2022 foodnfeed.com. All Rights Reserved.</p></center>
+  </footer>          
+
+</body>
+</html>

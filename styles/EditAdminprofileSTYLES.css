@@ -1,0 +1,171 @@
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    width: 300px;
+    background: #000;
+    border-left: 10px solid #000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation ul{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.DB img{
+    text-align: center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 200%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover{
+    background: #04AA6D;
+}
+
+.Dashtitle{
+    margin-bottom: 40px;
+    pointer-events: none;
+    text-align: center;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #04AA6D;
+}
+
+.navigation ul li:hover a{
+    color: #000;
+}
+
+.DashB{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* main */
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    top: 0;
+    min-height: 90vh;
+    background: #04AA6D;
+    transition: 0.5s;
+    border-left: 10px solid #04AA6D;
+    overflow: hidden;
+}
+
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.user{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: right;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.editcard{
+	background:#9FAFC2;
+	color:#211E41;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 480px;
+   	margin: auto;
+	text-align: center;
+	padding: 30px;
+position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+
+    
+    background: #9FAFC2;
+    transition: 0.5s;
+
+    border-left: 10px solid #9FAFC2;
+    overflow: hidden;
+}
+
+/* Add styles to the form container */
+
+input[type=text], input[type=email], input[type=password] {
+  border: none;
+  background: #D0E1F6;
+  width: 50%;
+  outline: none;
+}
+
+input[type=text]:focus,  input[type=email]:focus, input[type=password]:focus {
+  background-color: #D0E1F6;
+  outline: none;
+  border: none;
+}
+
+.editcard input[type="text"], input[type=email], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	height: 30px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.editcard input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 70%;
+    background: darkorange;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.editcard input[type="submit"]:hover {
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}

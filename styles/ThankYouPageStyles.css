@@ -1,0 +1,71 @@
+
+h1{
+
+	font-family:Georgia, serif;
+	color:black;
+}
+
+
+.boxback{
+	width:700px;
+	margin:12px;
+	padding:7px;
+	background:gray;
+	font-size:14px;
+	font-family:Verdana;
+	color:black;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {
+            background-color:darkgreen;
+}
+.success:hover {
+          background-color: darkgreen;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+.btn success:hover {
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+
+}
+a:link {
+	color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color:black;
+  }
+  
+  /* selected link */
+  a:active {
+	color:black;
+  }

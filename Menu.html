@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>foodnfeed.com</title>
+<link rel = "icon" href ="images/FoodnFeed Logo1.png" type = "image/x-icon">
+
+
+<link rel="stylesheet" type="text/css" href="styles/Homepagestyles.css">
+<link rel="stylesheet" type="text/css" href="styles/footerStyles.css">
+<link rel="stylesheet" type="text/css" href="styles/menuhome.css">
+<link rel="stylesheet" type="text/css" href="styles/gallery.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.search input[type=text]{
+    width:300px;
+    height:45px;
+    border-radius:25px;
+    border: none;
+
+}
+  
+.search{
+    float:right;
+    margin:1px;
+
+}
+  
+.search button{
+    background-color: green;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 
+.txt h1{
+	color: rgb(3, 60, 3);
+    font-weight: bold;
+	font-size: 69px;
+	margin-bottom: 20px;
+}
+
+.txt p{
+	font-weight: bold;
+	font-size: 62px;
+	color: black;
+
+}
+
+.txt h2{
+     
+    color: black;
+	  font-weight: bolder;
+	  font-size: 38px;
+    font-style: oblique;
+    font-family: "Trirong", serif;
+}
+</style>
+<body>
+
+<div class="navbar">
+
+  <a class="active" href="indexNew.html">Home</a>
+  <a href="Menu.html">Menu</a>
+   <a href="AboutUs.html">About Us</a>
+  <a href="ContactUs.html">Contact Us</a>
+   
+   <div class="search">
+            <form action="#">
+                <input type="text"
+                    placeholder=" Search Menus"
+                    name="search">
+                <button>
+                    <i class="fa fa-search"
+                        style="font-size: 15px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+</div>
+ 
+<center>
+    <!-- logo with tag -->
+        <div class="content">
+            
+           <h1 style="color:#04AA6D; padding-top:20px;">Food n Feed</h1>
+              
+            <b> A Online Food Delivery Portal for You....
+            </b></center>
+        </div>
+<!--content related to different pages (body-->
+
+
+<br><br>
+
+
+    <!-- gallery images -->
+    
+
+          
+    <div class="slider">
+      <!-- fade css -->
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Food and Feed</h1>
+          <p>FEEL THE TASTE.......</p><br>
+          <h2>Making the delicious premium food since 2022</h2>
+        </div>
+        <img src="Images/F2.jpg" class="img4" style="width: 100%; height: 100%;">
+      </div>
+  
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Food and Feed</h1>
+          <p>FEEL THE TASTE.......</p><br>
+          <h2>Making the delicious premium food since 2022</h2>
+        </div>
+        <img src="Images/F5.jpg" class="img4" style="width: 100%; height: 100%;">
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Food and Feed</h1>
+          <p>FEEL THE TASTE.......</p><br>
+          <h2>Making the delicious premium food since 2022</h2>
+        </div>
+        <img src="Images/F3.jpg" class="img4" style="width: 100%; height: 100%;">
+      </div>
+      
+  
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Food and Feed</h1>
+          <p>FEEL THE TASTE.......</p><br>
+          <h2>Making the delicious premium food since 2022</h2>
+        </div>
+        <img src="Images/F.jpg" class="img4"  style="width: 100%; height: 100%;">
+      </div>
+  
+      
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Food and Feed</h1>
+          <p>FEEL THE TASTE.......</p><br>
+          <h2>Making the delicious premium food since 2022</h2>
+        </div>
+        <img src="Images/F1.JPG" class="img4" style="width: 100%; height: 100%;">
+      </div>
+  
+      
+  
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      
+      <div class="dotsbox" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+  
+    </div>
+        
+          
+      <!--link js file-->
+       <script src="js/slideimage.js"></script>
+
+       <br><br>
+
+      
+    
+<!--add items-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="Sri Lankan.html">
+      <img src="Images/sri.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Sri Lankan</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <a href="Indian.html">
+      <img src="Images/india.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Indian</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <a href="Italian.html"></a>
+      <img src="Images/italian.jpg" class="image2"alt="Restaurant">
+    </a>
+      <p class="text2">Italian</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <a href="Vegetarian.html">
+      <img src="Images/vegi.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Vegetarian</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <a href="#">
+      <a href="cafe 4 U.html">
+      <img src="Images/breakfast.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Breakfast</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <a href="#">
+      <img src="Images/lunch.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Lunch</p>
+    </div>
+  </div>
+
+    
+  <div class="column">
+    <div class="card">
+    <a href="#">
+      <img src="Images/d.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Dinner</p>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+    <a href="#">
+      <img src="Images/soup.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Soup</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <a href="#">
+      <img src="Images/dessrt.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Dessert</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <a href="#">
+      <img src="Images/beverages.jpg" class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Beverages</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <a href="#">
+      <img src="Images/healthy.jpg"  class="image2"alt="Restaurant">
+      </a>
+      <p class="text2">Healthy Foods</p>
+    </div>
+  </div>
+
+</div>
+
+<br><br><br>
+<!--RESPONSIVE FOOTER FOR WEB PAGE-->
+<footer class="footer">
+  	 
+  	 	<div class="row">
+  	 		<div class="footer-col">
+				<h4>Popular Categories</h4>
+				<ul>
+					<li><a href="Sri Lankan.html">Sri Lankan</a></li>
+					<li><a href="Indian.html">Indian</a></li>
+					<li><a href="Italian.html">Italian</a></li>
+					<li><a href="Vegetarian.html">Vegetarian</a></li>
+				</ul>
+			</div>
+  	 		<div class="footer-col">
+  	 			<h4>Popular Pages</h4>
+  	 			<ul>
+  	 				<li><a href="indexNew.html">Home</a></li>
+  	 				<li><a href="FAQs.html">FAQ</a></li>
+  	 				<li><a href="AboutUs.html">About Us</a></li>
+  	 				<li><a href="ContactUs.php">Contact Us</a></li>
+  	 				<li><a href="restaurant.html">Restaurants Near Me</a></li>
+  	 			</ul>
+  	 		</div>
+			   
+  	 		<div class="footer-col">
+  	 			<h4>Reach Us</h4>
+  	 			<ul>
+  	 				
+  	 				<li><a href="#">info@foodnfeed.lk</a></li>
+  	 				<li><a href="#">+94 771559844</a></li>
+  	 				<li><a href="#">foodnfeed@gmail.com</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+			
+  	 			<h4>Connect With Us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+  	 				<a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+  	 				<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div> 
+		 
+  	 <br/><br/> <br/>
+	 <center><p style="color:white; font-size:10px">&COPY; 2022 foodnfeed.com. All Rights Reserved.</p></center>
+  </footer>          
+
+</body>
+</html>

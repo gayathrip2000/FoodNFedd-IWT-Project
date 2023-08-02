@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+  
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+.container img { 
+  vertical-align:center;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color:	darkgrey;
+  
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.card {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.7);
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  background-color:darkgrey;
+}
+
+.image1{
+	
+	width: 300px;
+	height:200px;
+	border-radius: 9px;
+	transition: width 2s, height 4s;
+}
+
+	
+.image1:hover {
+ width: 250px;
+  height: 200px;
+}
+ 
+.text3{
+	
+	font-style:bold;
+	color:black;
+}
+.text4{
+	
+	font-style:bold;
+	color:black;
+}
+
+.card button
+{
+
+  padding: 5px 30px;
+  border:none;
+  outline:none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border-radius:5px;
+  font-size:20px;
+  display:block;
+  margin: 0 auto;
+  transition: 0.4s all;
+
+  
+
+}
+.card button:hover
+{
+  transform: scale(1.08);
+}

@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Style top part*/
+.top{
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(15, 16, 16);
+  text-transform: uppercase;
+}
+
+.top h1{
+  font-size: 64px;
+}
+
+.top h2{
+  font-size: 16px;
+}
+
+/*style the form content*/
+.fcontent{
+  background-image: linear-gradient(to right, rgb(149, 148, 148), rgb(169, 233, 169) );
+  border-color: aqua;
+  background-color:gray;
+  padding:60px;
+  
+}
+
+/* Create two columns that float next to eachother */
+.left{
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 50px;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/*style submit button*/
+input[type=submit] {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: rgb(71, 91, 68);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  opacity:0.5;
+  cursor: pointer;
+}
+
+.right {
+  float: left;
+  width: 50%;
+  margin-top: 25px;
+  padding: 30px;
+  height: 50%;
+}
+
+/*style the right side bottom part*/
+.bottomh h1{
+  font-size: 32px;
+  padding-bottom: 60px;
+  animation:forwards;
+}
+
+.bottomh{
+  margin-top: 20px;
+  width:100%;
+  padding:50px;
+  background-image: linear-gradient(to right, rgb(169, 233, 169) , rgb(149, 148, 148));
+  border:none;
+  font-size: 16px;
+}
+
+/*style the unordered list*/
+.bottomh ul li a{
+	margin-bottom: 0px;
+}
+
+.bottomh ul li a{
+	font-size: 16px;
+  font-weight: bolder;
+	text-transform: capitalize;
+	color: #047732;
+	text-decoration: none;
+	font-weight: 300;
+	
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.bottomh ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.buttonb {
+  border: none;
+  color: white;
+  padding: 25px 60px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(71, 91, 68);
+  opacity: 0.8;
+}
+
+.buttonb:hover{
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.contenth:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .left, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,17 @@
+
+
+  .img-responsive
+  {
+
+    width: 150px;
+	  height:200px;
+	  border-radius: 9px;
+	  transition: width 8s, height 10s;
+
+  }
+  .img-responsive
+  {
+    width: 250px;
+    height: 200px;
+
+  }

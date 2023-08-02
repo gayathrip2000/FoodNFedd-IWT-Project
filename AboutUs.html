@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AboutUs - foodnfeed.com</title>
+<meta charset="utf-8">
+<link rel = "icon" href ="Images/FoodnFeed Logo.png" type = "image/x-icon">
+<link rel="stylesheet" href="styles/AboutUsStyles.css">
+<link rel="stylesheet" type="text/css" href="styles/Homepagestyles.css">
+<link rel="stylesheet" type="text/css" href="styles/footerStyles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/aboutus.js"></script>
+
+
+</head>
+<style>
+     .search input[type=text]{
+    width:300px;
+    height:45px;
+    border-radius:25px;
+    border: none;
+
+}
+  
+.search{
+    float:right;
+    margin:1px;
+
+}
+  
+.search button{
+    background-color: green;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 
+</style>
+<body style="background-image: url('Images/white.webp'); background-repeat: no-repeat;background-size: cover" >
+
+<div class="navbar">
+
+  <a class="active" href="indexNew.html">Home</a>
+  <a href="Menu.html">Menu</a>
+   <a href="AboutUs.html">About Us</a>
+  <a href="ContactUs.html">Contact Us</a>
+   
+   <div class="search">
+            <form action="#">
+                <input type="text"
+                    placeholder=" Search Menus"
+                    name="search">
+                <button>
+                    <i class="fa fa-search"
+                        style="font-size: 15px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+</div>
+
+
+<!--about us-->
+<div class="container">
+  <div class="toph">
+    <h1>Welcome to Food & Feed</h1>
+    <p>We are managing star class restaurants that use only best ingrediants from the best suppliers.</p>
+    <p>Our staff are professionals and we make everthing to left our clients satisfied.</p><br>
+  </div>
+  <hr>
+  <div class="contenth">
+    
+    <div class="column">
+      <div class="imageh">
+        <img src="Images/searcho.png" alt="search"  style="width:100%">
+      </div>
+      <div class="paragraphh">
+        <h2>Search</h2>
+        <p>You search for whatever you want to eat and we'll find you the best delivery restaurants near you.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="imageh">
+        <img src="Images/shopo.png" alt="shop" style="width:100%">
+      </div>
+      <div class="paragraphh">
+        <h2>Choose</h2>
+        <p>Choose your favourite meals and order online. It's easy to customize your order.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="imageh">
+        <img src="Images/carto.png" alt="cart" style="width:100%">
+      </div>
+      <div class="paragraphh">
+        <h2>Pay</h2>
+        <p>Make payment easily as your preference.</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="imageh">
+        <img src="Images/happy.png" alt="smile" style="width:100%">
+      </div>
+      <div class="paragraphh">
+        <h2>Enjoy</h2>
+        <p>No shopping, no coking, no counting and no cleaning. Enjoy your healthy meal with your family .</p>
+      </div>
+    </div>
+    <hr>
+    <div class="bottomh">
+      <div class="left">
+        <p>Find us on </p><br>
+        <a href="https://play.google.com/store/apps?hl=en_US&gl=GB">
+        <img border="0" alt="playstore" src="Images/google-play-badge.png" width="200" height="100"></a>
+        <div class="buttonl">
+        <a href="https://www.apple.com/app-store/">
+        <img border="0" alt="applestore" src="Images/appleStore.png" width="180" height="70"></a>
+        </div>
+      </div>
+      <div class="right">
+        
+        <h2 style="text-align: center">Food Gallery</h2>
+
+        <div class="contentg">
+          <div class="imageSlides fade">
+            <div class="no">1 / 5</div>
+            <img src="Images/food2.jpg" style="width:100%">
+          </div>
+
+        <div class="imageSlides fade">
+            <div class="no">2 / 5</div>
+            <img src="Images/food3.jpg" style="width:100%">
+          </div>
+
+        <div class="imageSlides fade">
+            <div class="no">3 / 5</div>
+            <img src="Images/food4.jpg" style="width:100%">
+          </div>
+            
+        <div class="imageSlides fade">
+            <div class="no">4 / 5</div>
+            <img src="Images/donuts.jpg" style="width:100%">
+          </div>
+
+        <div class="imageSlides fade">
+            <div class="no">5 / 5</div>
+            <img src="Images/food.jpg" style="width:100%">
+          </div>
+    
+          <a class="before" onclick="plusSlides(-1)">❮</a>
+          <a class="after" onclick="plusSlides(1)">❯</a>
+
+          <br>
+          
+          <button class="buttonr"  onclick="document.location='OrderNow.html'">Order Now</button>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--RESPONSIVE FOOTER FOR WEB PAGE-->
+<footer class="footer">
+  	 
+    <div class="row">
+        <div class="footer-col">
+         <h4>Popular Categories</h4>
+         <ul>
+             <li><a href="Sri Lankan.html">Sri Lankan</a></li>
+             <li><a href="Indian.html">Indian</a></li>
+             <li><a href="Italian.html">Italian</a></li>
+             <li><a href="Vegetarian.html">Vegetarian</a></li>
+         </ul>
+     </div>
+        <div class="footer-col">
+            <h4>Popular Pages</h4>
+            <ul>
+                <li><a href="indexNew.html">Home</a></li>
+                <li><a href="FAQs.html">FAQ</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="restaurant.html">Restaurants Near Me</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Reach Us</h4>
+            <ul>
+                
+                <li><a href="#">info@foodnfeed.lk</a></li>
+                <li><a href="#">+94 771559844</a></li>
+                <li><a href="#">foodnfeed@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+     
+            <h4>Connect With Us</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div> 
+  
+<br/><br/> <br/>
+<center><p style="color:white; font-size:10px">&COPY; 2022 foodnfeed.com. All Rights Reserved.</p></center>
+</footer>          
+
+</body>
+</html>

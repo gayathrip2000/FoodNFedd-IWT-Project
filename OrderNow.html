@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order - foodnfeed.com</title>
+<link rel = "icon" href ="Images/FoodnFeed Logo.png" type = "image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="styles/Homepagestyles.css">
+<link rel="stylesheet" type="text/css" href="styles/footerStyles.css">
+<link rel="stylesheet" type="text/css" href="styles/OrderNowstyles.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+     .search input[type=text]{
+    width:300px;
+    height:45px;
+    border-radius:25px;
+    border: none;
+
+}
+  
+.search{
+    float:right;
+    margin:1px;
+
+}
+  
+.search button{
+    background-color: green;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 
+body{
+    background-color: #f2f2f2;
+}
+   /*homepage content css*/
+    .home {
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+section {
+  padding: 10px 3%;
+}
+.home .image img {
+  width: 100%;
+  height:100%;
+}
+.home .content h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.home .content p {
+  color: var(--grey);
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+/*order now btn*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 2px solid rgb(103, 150, 121);
+  border-radius: 5px;
+  background: #8ea497;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #eafaf1;
+  outline: none;
+}
+.top{
+    background-color: rgb(224, 227, 218);
+}
+.buttonb {
+  border: none;
+  color: white;
+  padding: 25px 60px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(71, 91, 68);
+  opacity: 0.8;
+}
+
+.buttonb:hover{
+  opacity: 1;
+}
+
+</style>
+<body>
+ 
+    <!-- Navbar Section starts Here -->
+
+    <div class="navbar">
+
+        <a class="active" href="indexNew.html">Home</a>
+        <a href="#news">Menu</a>
+         <a href="#aboutus">About Us</a>
+        <a href="#contactus">Contact Us</a>
+      </div>
+
+<!--Order now-->
+
+
+ <!-- fOOD sEARCH Section Starts Here -->
+ <section class="food-search">
+    <div class="container">
+        
+        <h2 class="text-center text-center">Fill this form to confirm your order.</h2>
+
+        <form action="#" class="order">
+            <fieldset>
+                <legend>Selected Food</legend>
+
+                <div class="food-menu-img">
+                    <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h3>Food Title</h3>
+                    <p class="food-price">Rs.250.00</p>
+
+                    <div class="order-label">Quantity</div>
+                    <input type="number" name="qty" class="input-responsive" value="1" required>
+                    
+                </div>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Delivery Details</legend>
+                <div class="order-label">Full Name</div>
+                <input type="text" name="full-name" placeholder="Susan " class="input-responsive" required>
+
+                <div class="order-label">Phone Number</div>
+                <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+
+                <div class="order-label">Email</div>
+                <input type="email" name="email" placeholder="E.g. susan@gmail.com" class="input-responsive" required>
+
+                <div class="order-label">Address</div>
+                <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+
+                <!--<input type="submit" name="submit" value="Confirm Order" class="btn btn-primary" onclick="document.location='ThankYouPage.html'">-->
+                <button class="buttonb" onclick="document.location='ThankYouPage.html'">Confirm Order</button>
+
+
+            </fieldset>
+
+        </form>
+
+    </div>
+</section>
+<!-- fOOD sEARCH Section Ends Here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <hr>
+<!--RESPONSIVE FOOTER FOR WEB PAGE-->
+<footer class="footer">
+  	 
+  	 	<div class="row">
+  	 		<div class="footer-col">
+				<h4>Popular Categories</h4>
+				<ul>
+					<li><a href="Sri Lankan.html">Sri Lankan</a></li>
+					<li><a href="Indian.html">Indian</a></li>
+					<li><a href="indexNew.html">Italian</a></li>
+					<li><a href="Vegetarian.html">Vegetarian</a></li>
+				</ul>
+			</div>
+  	 		<div class="footer-col">
+  	 			<h4>Popular Pages</h4>
+  	 			<ul>
+  	 				<li><a href="MainHome_Page.html">Home</a></li>
+  	 				<li><a href="FAQs.html" target=”_blank”>FAQ</a></li>
+  	 				<li><a href="#">About Us</a></li>
+  	 				<li><a href="#">Contact Us</a></li>
+  	 				<li><a href="restaurant.html"target=”_blank”>Restaurants Near Me</a></li>
+  	 			</ul>
+  	 		</div>
+			   
+  	 		<div class="footer-col">
+  	 			<h4>Reach Us</h4>
+  	 			<ul>
+  	 				
+  	 				<li><a href="#">info@foodnfeed.lk</a></li>
+  	 				<li><a href="#">+94 771559844</a></li>
+  	 				<li><a href="#">foodnfeed@gmail.com</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+			
+  	 			<h4>Connect With Us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com" target=”_blank”><i class="fa fa-facebook"></i></a>
+  	 				<a href="https://www.twitter.com"target=”_blank”><i class="fa fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com"target=”_blank”><i class="fa fa-instagram"></i></a>
+  	 				<a href="https://www.linkedin.com/"target=”_blank”><i class="fa fa-linkedin"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div> 
+		 
+  	 <br/><br/> <br/>
+	 <center><p style="color:white; font-size:10px">&COPY; 2022 foodnfeed.com. All Rights Reserved.</p></center>
+  </footer>          
+
+</body>
+</html>

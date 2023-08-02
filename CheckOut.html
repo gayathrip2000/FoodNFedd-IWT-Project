@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CheckOut</title>
+
+<link rel="stylesheet" type="text/css" href="styles/Homepagestyles.css">
+<link rel="stylesheet" type="text/css" href="styles/footerStyles.css">
+<link rel="stylesheet" type="text/css" href="styles/CheckOutStyles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+     .search input[type=text]{
+    width:300px;
+    height:45px;
+    border-radius:25px;
+    border: none;
+
+}
+  
+.search{
+    float:right;
+    margin:1px;
+
+}
+  
+.search button{
+    background-color: green;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.bgimage{
+	
+	/* The image used */
+  background-image: url("Images/bac.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+</style>
+<body>
+
+<div class="navbar">
+
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Menu</a>
+   <a href="#aboutus">About Us</a>
+  <a href="#contactus">Contact Us</a>
+   
+   <div class="search">
+            <form action="#">
+                <input type="text"
+                    placeholder=" Search Menus"
+                    name="search">
+                <button>
+                    <i class="fa fa-search"
+                        style="font-size: 15px;">
+                    </i>
+                </button>
+            </form>
+        </div>
+</div>
+ 
+<center>
+    <!-- logo with tag -->
+        <div class="content">
+            <img src="Images/FoodnFeed Logo1.png" alt ="image" width="200px" height="200px" class="center">
+           <h1 style="color:#04AA6D; padding-top:20px;">Food n Feed</h1>
+              
+            <b>A Online Food Delivery Portal for You....
+            </b><hr></center>
+        </div>
+<div class="bgimage">
+<br>
+<h1 class="tit">Delivery Details</h1>
+<form class="coform" action="#" target="_blank" method="#" >
+<label for="fullname">Full Name</label><br>
+<input type="text" id="fullname" name="fullname" placeholder="FullName"><br>
+<label for="mobnumber">Mobile Number</label><br>
+<input type="text" id="mobnumber" name="mobnumber" placeholder="MobileNumber"><br>
+<label for="email">E-mail</label><br>
+<input type="text" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br/>
+<label for="address">Address</label><br>
+<input type="text" id="address" name="address" placeholder="Address"><br><br>
+Select a Payment method:
+<br>
+<input type="checkbox" id="paypal" name="paypal">
+<label for="paypal"> <img src="Images/paypal.png" class="paypalimg" alt ="paypal logo">Paypal</label><br>
+<input type="checkbox" id="card" name="card">
+<label for="card"> <img src="Images/card.png" class="cardimg" alt ="card logo">Credit/Debit Card</label><br>
+<input type="checkbox" id="cod" name="cod">
+<label for="cod"> <img src="Images/cod.png" class="codimg" alt ="cod logo">Cash on Delivery</label><br>
+</form>
+<br>
+
+
+<h1 class="tit">Confirm Payment</h1>
+<div class="conord">
+<div class="row">
+<div class="col">
+<ul type="none">
+	<li class="left">Food Item 1:</li>
+	<li class="left">Food Item 2:</li>
+	<li class="left">Food Item 3:</li>
+	<li class="left">Food Item 4:</li>
+</ul>
+</div>
+<div class="col">
+<ul type="none">
+    <li class="right">LKR ####</li>
+    <li class="right">LKR ####</li>
+    <li class="right">LKR ####</li>
+    <li class="right">LKR ####</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col">
+<ul type="none">
+	<li class="left">Subtotal:</li>
+	<li class="left">Delivery:</li>
+</ul>
+</div>
+<div class="col">
+<ul type="none">
+    <li class="right">LKR ####</li>
+    <li class="right">LKR ####</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="col">
+<ul type="none">
+	<li class="left">Total:</li>
+</ul>
+</div>
+<div class="col">
+<ul type="none">
+    <li class="right">LKR ####</li>
+</ul>
+</div>
+</div>
+<hr>
+<form>
+<input type="text" name="coupon">
+<button class="button button1" type="button">Apply</button>
+<br>
+<button class="button button2" type="submit">CONFIRM </button>
+
+</div>
+
+
+<hr>
+</div>
+<!--RESPONSIVE FOOTER FOR WEB PAGE-->
+<footer class="footer">
+  	 
+  	 	<div class="row">
+  	 		<div class="footer-col">
+				<h4>Popular Categories</h4>
+				<ul>
+					<li><a href="#">Sri Lankan</a></li>
+					<li><a href="#">Indian</a></li>
+					<li><a href="#">Italian</a></li>
+					<li><a href="#">Vegetarian</a></li>
+				</ul>
+			</div>
+  	 		<div class="footer-col">
+  	 			<h4>Popular Pages</h4>
+  	 			<ul>
+  	 				<li><a href="MainHome_Page.html">Home</a></li>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">About Us</a></li>
+  	 				<li><a href="#">Contact Us</a></li>
+  	 				<li><a href="restaurant.html">Restaurants Near Me</a></li>
+  	 			</ul>
+  	 		</div>
+			   
+  	 		<div class="footer-col">
+  	 			<h4>Reach Us</h4>
+  	 			<ul>
+  	 				
+  	 				<li><a href="#">info@foodnfeed.lk</a></li>
+  	 				<li><a href="#">+94 771559844</a></li>
+  	 				<li><a href="#">foodnfeed@gmail.com</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+			
+  	 			<h4>Connect With Us</h4>
+  	 			<div class="social-links">
+  	 				<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+  	 				<a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+  	 				<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div> 
+		 
+  	 <br/><br/> <br/>
+	 <center><p style="color:white; font-size:10px">&COPY; 2022 foodnfeed.com. All Rights Reserved.</p></center>
+  </footer>          
+
+</body>
+</html>

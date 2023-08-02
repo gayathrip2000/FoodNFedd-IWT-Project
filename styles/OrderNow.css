@@ -1,0 +1,21 @@
+/*button style for css*/
+.button {
+  display: block;
+  width: 75%;
+  border: none;
+  background-color:black;
+  color:green;
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight:bold;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px 190px;
+}
+
+.button:hover {
+  background-color:forestgreen;
+  color: black;
+}
+
+ 
